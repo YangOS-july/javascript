@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var fruits = ["Orange", "Banana", "Apple", "Papaya", "Mango"];
+        document.write(fruits.entries() + "<br>");              // 返回：[object Array Iterator]
+        document.write(fruits.includes("Apple") + "<br>");      // 返回：true
+        document.write(fruits.fill("grape") + "<br>");          // 返回：grape,grape,grape,grape,grape
+        var fruits = ["Orange", "Banana", "Apple", "Papaya", "Mango"];
+        document.write(fruits.indexOf("Mango") + "<br>");               // 返回：4
+        document.write(Array.isArray(fruits) + "<br>");                 // 返回：true
+        document.write(fruits.join("-") + "<br>");                      // 返回：Orange-Banana-Apple-Papaya-Mango
+        document.write(fruits.lastIndexOf("Banana") + "<br>");          // 返回：1
+        document.write(fruits.pop() + "<br>");                          // 返回：Mango
+        document.write(fruits.push("Watermelon") + "<br>");             // 返回：5
+        document.write(fruits.unshift("Lemon","Pineapple") + "<br>");   // 返回：7
+        document.write(fruits.slice(1, 5) + "<br>");                    // 返回：Pineapple,Orange,Banana,Apple
+        document.write(fruits.sort() + "<br>");                         // 返回：Apple,Banana,Lemon,Orange,Papaya,Pineapple,Watermelon
+        document.write(fruits.valueOf() + "<br>");                      // 返回：Apple,Banana,Lemon,Orange,Papaya,Pineapple,Watermelon
+
+    </script>
+</body>
+</html>

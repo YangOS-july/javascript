@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ var str = new String('JavaScript');
+String.prototype.name = null;
+str.name = "Hello World!";
+document.write(str.constructor + "<br>");       // 输出：function String() { [native code] }
+document.write(str.length + "<br>");            // 输出：10
+document.write(str);                       // 输出：Hello World!
+
+    </script>
+</body>
+</html>
